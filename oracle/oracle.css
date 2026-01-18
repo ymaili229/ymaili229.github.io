@@ -5,38 +5,107 @@ body {
     font-size: 1.2em;
 }
 
-a {
-    color: rgb(0, 147, 173);
+
+.sticky {
+    position: sticky;
+    top: 8px;
+    overflow: hidden;
+}
+
+ul {
+    top: -8px;
+    left: -10px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    z-index: 1030;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:not(.active) {
+  background-color: #111111;
+}
+
+ul li a.active {
+  background-color: #04AA6D;
+}
+
+.logo {
+    margin-right: 10px;
 }
 
 
-.gallery {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 1em;
+.center {
+    text-align: center;
+}
+
+.bar {
+    background: rgba(171, 203, 252, 0.2);
+    padding: 1px;
+    margin: 10px;
+    position: absolute;
+    left: -10px;
+    width: 99.9%;
+    border-radius: 5px;
+}
+
+.header {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    font-style: normal;
+    text-align: center;
+    color: rgb(194, 194, 194);
+}
+
+.info {
+    background: rgba(171, 203, 252, 0.048);
+    position: relative;
+    top: 180px;
+    padding-bottom: 1px;
+}
+
+.info-main {
+    padding-left: 0px;
 }
 
 .rounded {
-    border-radius: 10px;
-}
-
-.gallery img {
-    margin-right: 0.3em;
-    width: 170px;
+    border-radius: 7px;
 }
 
 
-th, tr:nth-child(odd) {
-    background-color: rgba(68, 68, 68, 0.2);
+/* Fonts */
+
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-th, tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.2);
+.quantico-bold {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-td:nth-child(1) {
-    text-align: right;
+.quantico-regular-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
-td:nth-child(2) {
-    text-align: center;
+.quantico-bold-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
