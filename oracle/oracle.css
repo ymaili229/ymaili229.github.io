@@ -59,6 +59,10 @@ ul li a.active {
     text-align: center;
 }
 
+.left {
+    text-align: left;
+}
+
 .bar {
     background: rgba(171, 203, 252, 0.2);
     padding: 1px;
@@ -83,6 +87,16 @@ ul li a.active {
     position: relative;
     top: 180px;
     padding-bottom: 1px;
+}
+
+.footer {
+    background: rgba(171, 203, 252, 0.2);
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    border-radius: 5px;
+    height: 100px;
+    padding-bottom: 15px;
 }
 
 .info-main {
